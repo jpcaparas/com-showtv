@@ -1,0 +1,45 @@
+.page-tv-show {
+  h1 {
+    color: #fff;
+  }
+
+  .jumbotron {
+    background-size: cover;
+    border-radius: 0;
+    height: 200px;
+    display: table;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: $grid-float-breakpoint) {
+      height: 300px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 400px;
+    }
+
+    &:before {
+      background-color: rgba(0, 0, 0, 0.5);
+      content: " ";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      z-index: 1;
+    }
+
+    & > .content {
+      display: table-cell;
+      table-layout: fixed;
+      height: 100%;
+      width: 100%;
+      vertical-align: middle;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "jpcaparas/showtv-theme",
+  "version": "0.1.0",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "Wordpress theme for the ShowTV.com Wordpress application",
+  "homepage": "https://showtv.com/",
+  "authors": [
+    {
+      "name": "JP Caparas",
+      "email": "jp@jpcaparas.com",
+      "homepage": "http://jpcaparas.com"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "composer/installers": "~1.0",
+    "madcoda/php-youtube-api": "^1.2",
+    "php-tmdb/api": "~2.0"
+  }
+}
