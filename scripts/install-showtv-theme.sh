@@ -4,7 +4,7 @@
 
 cd web/app/themes/showtv # Change directory to the themes folder
 composer install # Installing server-side libraries
-npm install -g gulp bower # Install gulp and bower
+# npm install -g gulp bower # Install gulp and bower
 bower install # Install dependencies
 gulp # Run gulp commands
 gulp --production # Build assets for production

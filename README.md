@@ -8,6 +8,9 @@ ShowTV.com keeps track of the latest TV shows.
 
 * PHP >= 5.5
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* Global installation of the following node modules
+ ** [gulp](http://gulpjs.com/)
+ ** [bower](https://bower.io/)
 
 ## Installation of the Bedrock application
 
@@ -26,7 +29,8 @@ ShowTV.com keeps track of the latest TV shows.
 5. Set the document root to the `web` directory.
 6. Access WP admin at `http://showtv.com/wp/wp-admin`
 7. Activate the bundled `ShowTV` theme.
-8. Set *The Movie Database (TMDB)* and *YouTube* options on the dashboard.
+8. Activate important plugins (e.g. Meta Slider, Yoast)
+9. Set *The Movie Database (TMDB)* and *YouTube* options on the dashboard.
 
 ![TMDB and YouTube options](http://i.imgur.com/QTKrYas.png)
 
