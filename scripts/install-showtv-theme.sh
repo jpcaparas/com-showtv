@@ -3,6 +3,8 @@
 # Install ShowTV theme
 
 cd web/app/themes/showtv # Change directory to the themes folder
+npm install gulp # Install local gulp
+npm install bower # Install local bower
 composer install # Installing server-side libraries
 # npm install -g gulp bower # Install gulp and bower
 bower install # Install dependencies
