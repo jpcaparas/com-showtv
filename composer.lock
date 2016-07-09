@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "91d1ded648b048487acba17f057c9e91",
-    "content-hash": "6c0c899f4a64fd7b030d7181722724ab",
+    "hash": "8b04fa4006cd1a970fba90e8de5e415a",
+    "content-hash": "183315488f090d5062a03196275bd875",
     "packages": [
         {
             "name": "composer/installers",
@@ -426,6 +426,27 @@
             "time": "2011-09-02 14:06:13"
         },
         {
+            "name": "wpackagist-plugin/disqus-comment-system",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disqus-comment-system/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disqus-comment-system/",
+            "time": "2016-04-05 00:29:37"
+        },
+        {
             "name": "wpackagist-plugin/goodbye-captcha",
             "version": "dev-trunk",
             "source": {
@@ -487,6 +508,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jetpack/",
             "time": "2016-05-26 23:36:33"
+        },
+        {
+            "name": "wpackagist-plugin/ml-slider",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ml-slider/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ml-slider.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ml-slider/",
+            "time": "2016-05-20 11:39:36"
         },
         {
             "name": "wpackagist-plugin/simply-show-hooks",
@@ -688,6 +730,8 @@
         "wpackagist-plugin/contact-form-7": 20,
         "wpackagist-plugin/wp-mail-smtp": 20,
         "wpackagist-plugin/advanced-cron-manager": 20,
+        "wpackagist-plugin/disqus-comment-system": 20,
+        "wpackagist-plugin/ml-slider": 20,
         "wpackagist-plugin/fakerpress": 20
     },
     "prefer-stable": false,

@@ -7,7 +7,8 @@ use Roots\Sage\Assets;
 /**
  * Theme setup
  */
-function setup() {
+function setup()
+{
   // Enable features from Soil when plugin is activated
   // https://roots.io/plugins/soil/
   add_theme_support('soil-clean-up');
@@ -48,36 +49,40 @@ function setup() {
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   add_editor_style(Assets\asset_path('styles/main.css'));
 }
+
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
 /**
  * Register sidebars
  */
-function widgets_init() {
+function widgets_init()
+{
   register_sidebar([
-    'name'          => __('Primary', 'sage'),
-    'id'            => 'sidebar-primary',
+    'name' => __('Primary', 'sage'),
+    'id' => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_widget' => '</section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
   ]);
 
   register_sidebar([
-    'name'          => __('Footer', 'sage'),
-    'id'            => 'sidebar-footer',
+    'name' => __('Footer', 'sage'),
+    'id' => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_widget' => '</section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
   ]);
 }
+
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
 /**
  * Determine which pages should NOT display the sidebar
  */
-function display_sidebar() {
+function display_sidebar()
+{
   static $display;
 
   isset($display) || $display = !in_array(true, [
@@ -86,6 +91,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    isset($_GET['show_id'])
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
@@ -94,7 +100,8 @@ function display_sidebar() {
 /**
  * Theme assets
  */
-function assets() {
+function assets()
+{
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
@@ -103,4 +110,5 @@ function assets() {
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
+
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

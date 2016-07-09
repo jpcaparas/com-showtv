@@ -1,6 +1,12 @@
 .page-tv-show {
   h1 {
     color: #fff;
+    font-family: "Passion one", $font-family-serif, sans-serif;
+    font-size: $font-size-base * 4;
+
+    @media (min-width: $grid-float-breakpoint) {
+      font-size: $font-size-base * 6;
+    }
   }
 
   .jumbotron {

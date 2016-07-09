@@ -48,7 +48,7 @@ class ShowTV_Meta_Box_TMDB {
      */
     private function __construct() {
         // Set our titles
-        $this->pgge_title = __('TMDB (The Movie Database) Options');
+        $this->page_title = __('TMDB (The Movie Database) Options');
         $this->menu_title = __('TMDB Options');
     }
 

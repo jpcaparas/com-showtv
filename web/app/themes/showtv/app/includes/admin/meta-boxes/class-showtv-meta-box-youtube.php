@@ -47,7 +47,7 @@ class ShowTV_Meta_Box_YouTube {
      */
     private function __construct() {
         // Set our titles
-        $this->pgge_title = __('YouTube Options');
+        $this->page_title = __('YouTube Options');
         $this->menu_title = __('YouTube Options');
     }
 

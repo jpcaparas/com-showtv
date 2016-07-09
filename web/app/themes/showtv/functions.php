@@ -15,20 +15,21 @@ require_once(plugin_dir_path(__FILE__) . 'vendor/autoload.php');
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
-    'lib/assets.php',    // Scripts and stylesheets
-    'lib/extras.php',    // Custom functions
-    'lib/setup.php',     // Theme setup
-    'lib/titles.php',    // Page titles
-    'lib/wrapper.php',   // Theme wrapper class
-    'lib/customizer.php' // Theme customizer
+  'lib/assets.php',    // Scripts and stylesheets
+  'lib/extras.php',    // Custom functions
+  'lib/wp_bootstrap_nav_walker.php',    // Nav walker @see https://github.com/twittem/wp-bootstrap-navwalker
+  'lib/setup.php',     // Theme setup
+  'lib/titles.php',    // Page titles
+  'lib/wrapper.php',   // Theme wrapper class
+  'lib/customizer.php' // Theme customizer
 ];
 
 foreach ($sage_includes as $file) {
-    if (!$filepath = locate_template($file)) {
-        trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
-    }
+  if (!$filepath = locate_template($file)) {
+    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+  }
 
-    require_once $filepath;
+  require_once $filepath;
 }
 unset($file, $filepath);
 

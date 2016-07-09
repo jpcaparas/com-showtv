@@ -1,6 +1,7 @@
 <?php
 
-class ShowTV_API_TMDB_Search extends ShowTV_API_TMDB_Base {
+class ShowTV_API_TMDB_Search extends ShowTV_API_TMDB_Base
+{
     /**
      * @var \Tmdb\Api\Search
      */
@@ -10,7 +11,8 @@ class ShowTV_API_TMDB_Search extends ShowTV_API_TMDB_Base {
      * ShowTV_API_TDMB_Search constructor.
      * @param null|string $api_token
      */
-    public function __construct($api_token = null) {
+    public function __construct($api_token = null)
+    {
         parent::__construct($api_token);
         $this->search_api = $this->tmdb_client->getSearchApi();
     }
@@ -23,7 +25,8 @@ class ShowTV_API_TMDB_Search extends ShowTV_API_TMDB_Base {
      *
      * @return mixed $results
      */
-    public function search_tv($query = null, $parameters = array()) {
+    public function search_tv($query = null, $parameters = array())
+    {
         $results = $this->search_api->searchTv($query, $parameters);
 
         return $results;
