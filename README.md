@@ -8,6 +8,11 @@ Overview
 
 ShowTV.com keeps track of the latest TV shows.
 
+Demo
+----
+
+A demo can be seen at http://showtv.staging.jpcaparas.com/. Try to enter a TV show on the search bar.
+
 Requirements
 ------------
 
