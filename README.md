@@ -11,7 +11,7 @@ ShowTV.com keeps track of the latest TV shows.
 Demo
 ----
 
-A demo can be seen at http://showtv.staging.jpcaparas.com/. Try to enter a TV show on the search bar.
+A demo can be seen at [showtv.staging.jpcaparas.com](http://showtv.staging.jpcaparas.com). Try to search for a TV show on the search field on the home page to see it in action.
 
 Requirements
 ------------
