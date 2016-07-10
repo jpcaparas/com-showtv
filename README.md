@@ -1,21 +1,26 @@
-# [ShowTV.com WP Bedrock Application](https://showtv.com/)
+[ShowTV.com WP Bedrock Application](https://showtv.com/)
+==================================
 
 *Powered by Roots.io's [Bedrock Wordpress framework](web/app/themes/showtv) and [Sage theme starter kit](https://github.com/roots/sage)*.
 
+Overview
+--------
+
 ShowTV.com keeps track of the latest TV shows.
 
-## Requirements
+Requirements
+------------
 
-* PHP >= 5.5
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* Global installation of the following node modules
- ** [gulp](http://gulpjs.com/)
- ** [bower](https://bower.io/)
+* PHP 5.5 or higher
+* MySQL 5.0 or higher
+* [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* Node.js
+* A PHP web server or a Vagrant LEMP/LAMP stack. [Laravel Homestead](https://laravel.com/docs/4.2/homestead) is recommended.
 
 ## Installation of the Bedrock application
 
 1. Clone the git repo - `git clone https://github.com/jpcaparas/com-showtv.git`
-2. Run `composer install`
+2. Run `composer install`. This will also run post install scripts for the ShowTV theme.
 3. Copy `.env.example` to `.env` and update environment variables:
   * `DB_NAME` - Database name
   * `DB_USER` - Database user
